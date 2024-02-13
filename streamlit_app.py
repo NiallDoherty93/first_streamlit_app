@@ -5,7 +5,7 @@ streamlit.header('Breakfast Menu')
 streamlit.text('🥣 Omega 3 & Blueberry Oatmeal')
 streamlit.text('🥗 Kale, Spinach & Rocket Smoothie')
 streamlit.text('🐔  Hard-Boiled Free-Range Egg')
-streamlit.text('🥑🍞Advodaco Toast Egg')
+streamlit.text('🥑🍞Avocado Toast Egg')
 
 streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 
@@ -21,3 +21,5 @@ streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
 # Display the table on the page.
 
 my_fruit_list = my_fruit_list.set_index('Fruit')
+
+steamlit.multiselect("Pick some fruits: ", list(my_fruits_list.index),['Avocado', 'Strawberries'])
