@@ -50,7 +50,7 @@ my_data_rows = my_cur.fetchall()
 streamlit.header("The fuit load list contains")
 streamlit.dataframe(my_data_rows)
 
-streamlit.header("What fuit would you like to add?")
+#streamlit.header("What fuit would you like to add?")
 new_fruit = streamlit.text_input('What fruit would you like to add?' ,'')
 streamlit.write('Thanks for adding ', new_fruit)
 
