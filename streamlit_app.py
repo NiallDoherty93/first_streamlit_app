@@ -51,6 +51,19 @@ streamlit.header("The fuit load list contains")
 streamlit.dataframe(my_data_rows)
 
 streamlit.header("What fruit would you like to add?")
-fruit_choice = streamlit.text_input('What fruit would you like to add?',fruit_choice)
+new_fruit = st.text_input("What fruit would you like to add?")
+
+ # Check if the user has input a fruit
+    if new_fruit:
+        # Add the new fruit to the list
+        fruit_list.append(new_fruit)
+
+        # Update the session state
+        st.session_state.fruit_list = fruit_list
+
+        # Display the updated fruit list
+        st.write("Updated Fruit List:", fruit_list)
+if __name__ == "__main__":
+    main()
 
 
