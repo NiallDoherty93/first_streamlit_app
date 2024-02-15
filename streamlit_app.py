@@ -51,8 +51,9 @@ streamlit.header("The fuit load list contains")
 streamlit.dataframe(my_data_rows)
 
 streamlit.header("What fuit would you like to add?")
+fruit_choice = streamlit.text_input('What fruit would you like to add?','Kiwi')
 
-new_fruit = st.text_input("What fruit would you like to add?")
+
 #fruit_list.append(new_fruit)
 
  
