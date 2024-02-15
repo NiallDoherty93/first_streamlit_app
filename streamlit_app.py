@@ -54,11 +54,6 @@ streamlit.header("What fruit would you like to add?")
 new_fruit = st.text_input("What fruit would you like to add?")
 fruit_list.append(new_fruit)
 
-        # Update the session state
-       # st.session_state.fruit_list = fruit_list
-
-        # Display the updated fruit list
-       # st.write("Updated Fruit List:", fruit_list)
-
+ 
 
 
