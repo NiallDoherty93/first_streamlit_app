@@ -58,7 +58,7 @@ streamlit.write('The user entered ', new_fruit)
 fruit_load_list.append(new_fruit)
 
 # Display the updated fruit list
-st.write("Updated Fruit List:", fruit_load_list)
+#st.write("Updated Fruit List:", fruit_load_list)
  
 
 
