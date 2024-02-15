@@ -62,6 +62,8 @@ streamlit.dataframe(my_data_rows)
 
 # Display the updated fruit list
 #st.write("Updated Fruit List:", fruit_load_list)
+
+my_cur.execute("insert into fruit_load_list values ('from streamlit')")
  
 
 
