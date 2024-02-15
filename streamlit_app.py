@@ -53,7 +53,7 @@ except URLError as e:
     streamlit.error()
 
 
-streamlit.stop()
+#streamlit.stop()
 
 streamlit.header("The fruit load list contains:")
 #snowflake related functions
@@ -83,7 +83,7 @@ streamlit.write('Thanks for adding ', new_fruit)
 
 # Add the new fruit to the list directly (no need for if statement)
 #my_data_rows.append(new_fruit)
-my_data_rows.append((new_fruit,) + tuple(row[1:] for row in my_data_rows))
+#my_data_rows.append((new_fruit,) + tuple(row[1:] for row in my_data_rows))
 streamlit.dataframe(my_data_rows)
 #test
 
