@@ -55,7 +55,8 @@ new_fruit = streamlit.text_input('What fruit would you like to add?' ,'')
 streamlit.write('Thanks for adding ', new_fruit)
 
 # Add the new fruit to the list directly (no need for if statement)
-my_data_rows.append(new_fruit)
+#my_data_rows.append(new_fruit)
+my_data_rows.append((new_fruit,) + tuple(row[1:] for row in my_data_rows))
 streamlit.dataframe(my_data_rows)
 #test
 
