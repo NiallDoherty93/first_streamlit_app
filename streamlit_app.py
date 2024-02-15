@@ -54,7 +54,7 @@ streamlit.header("What fruit would you like to add?")
 new_fruit = st.text_input("What fruit would you like to add?")
 
  # Check if the user has input a fruit
-    if new_fruit:
+ if new_fruit:
         # Add the new fruit to the list
         fruit_list.append(new_fruit)
 
