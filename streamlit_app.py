@@ -85,28 +85,8 @@ if streamlit.button('Add a fruit to the list'):
         
 
 
-#import snowflake.connector
-#my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
-#my_cur = my_cnx.cursor()
-#my_cur.execute("select * from fruit_load_list")
-#my_data_rows = my_cur.fetchall()
-#streamlit.header("The fuit load list contains")
-#streamlit.dataframe(my_data_rows)
 
-#streamlit.header("What fuit would you like to add?")
-#new_fruit = streamlit.text_input('What fruit would you like to add?' ,'')
-#streamlit.write('Thanks for adding ', new_fruit)
 
-# Add the new fruit to the list directly (no need for if statement)
-#my_data_rows.append(new_fruit)
-#my_data_rows.append((new_fruit,) + tuple(row[1:] for row in my_data_rows))
-streamlit.dataframe(my_data_rows)
-#test
-
-# Display the updated fruit list
-#st.write("Updated Fruit List:", fruit_load_list)
-
-#my_cur.execute("insert into fruit_load_list values ('from streamlit')")
  
 
 
