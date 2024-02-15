@@ -55,12 +55,6 @@ new_fruit = streamlit.text_input('What fruit would you like to add?','Kiwi')
 streamlit.write('The user entered ', new_fruit)
 
     if new_fruit:
-    # Add the new fruit to the list
-    fruit_list.append(new_fruit)
-
-    # Display the updated fruit list
-    st.write("Updated Fruit List:", fruit_list)
-
 
 
 
