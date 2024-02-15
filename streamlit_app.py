@@ -63,7 +63,6 @@ new_fruit = st.text_input("What fruit would you like to add?")
 
         # Display the updated fruit list
         st.write("Updated Fruit List:", fruit_list)
-if __name__ == "__main__":
-    main()
+
 
 
