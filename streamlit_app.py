@@ -56,6 +56,7 @@ streamlit.write('Thanks for adding ', new_fruit)
 
 # Add the new fruit to the list directly (no need for if statement)
 my_data_rows.append(new_fruit)
+streamlit.dataframe(my_data_rows)
 #test
 
 # Display the updated fruit list
